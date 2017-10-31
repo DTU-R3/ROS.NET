@@ -261,7 +261,7 @@ namespace YAMLParser
                 }
             }
             File.WriteAllText(outputdir + "\\" + name + ".csproj", output);
-            File.WriteAllText(outputdir + "\\.gitignore", "*");
+            File.WriteAllText(outputdir + "\\.gitignore", "*.dll");
         }
 
         private static string __where_be_at_my_vc____is;

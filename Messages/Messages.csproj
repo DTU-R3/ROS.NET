@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94C4DF5B-1566-4ACC-9BD3-167AAC83F9FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Messages</RootNamespace>
+    <AssemblyName>Messages</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>0168, 0219</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>0168, 0219</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+	<Compile Include="std_msgs\Bool.cs" />
+	<Compile Include="std_msgs\Byte.cs" />
+	<Compile Include="std_msgs\ByteMultiArray.cs" />
+	<Compile Include="std_msgs\Char.cs" />
+	<Compile Include="std_msgs\ColorRGBA.cs" />
+	<Compile Include="std_msgs\Duration.cs" />
+	<Compile Include="std_msgs\Empty.cs" />
+	<Compile Include="std_msgs\Float32.cs" />
+	<Compile Include="std_msgs\Float32MultiArray.cs" />
+	<Compile Include="std_msgs\Float64.cs" />
+	<Compile Include="std_msgs\Float64MultiArray.cs" />
+	<Compile Include="std_msgs\Header.cs" />
+	<Compile Include="std_msgs\Int16.cs" />
+	<Compile Include="std_msgs\Int16MultiArray.cs" />
+	<Compile Include="std_msgs\Int32.cs" />
+	<Compile Include="std_msgs\Int32MultiArray.cs" />
+	<Compile Include="std_msgs\Int64.cs" />
+	<Compile Include="std_msgs\Int64MultiArray.cs" />
+	<Compile Include="std_msgs\Int8.cs" />
+	<Compile Include="std_msgs\Int8MultiArray.cs" />
+	<Compile Include="std_msgs\MultiArrayDimension.cs" />
+	<Compile Include="std_msgs\MultiArrayLayout.cs" />
+	<Compile Include="std_msgs\String.cs" />
+	<Compile Include="std_msgs\Time.cs" />
+	<Compile Include="std_msgs\UInt16.cs" />
+	<Compile Include="std_msgs\UInt16MultiArray.cs" />
+	<Compile Include="std_msgs\UInt32.cs" />
+	<Compile Include="std_msgs\UInt32MultiArray.cs" />
+	<Compile Include="std_msgs\UInt64.cs" />
+	<Compile Include="std_msgs\UInt64MultiArray.cs" />
+	<Compile Include="std_msgs\UInt8.cs" />
+	<Compile Include="std_msgs\UInt8MultiArray.cs" />
+	<Compile Include="geometry_msgs\Point.cs" />
+	<Compile Include="geometry_msgs\Point32.cs" />
+	<Compile Include="geometry_msgs\PointStamped.cs" />
+	<Compile Include="geometry_msgs\Polygon.cs" />
+	<Compile Include="geometry_msgs\PolygonStamped.cs" />
+	<Compile Include="geometry_msgs\Pose.cs" />
+	<Compile Include="geometry_msgs\Pose2D.cs" />
+	<Compile Include="geometry_msgs\PoseArray.cs" />
+	<Compile Include="geometry_msgs\PoseStamped.cs" />
+	<Compile Include="geometry_msgs\PoseWithCovariance.cs" />
+	<Compile Include="geometry_msgs\PoseWithCovarianceStamped.cs" />
+	<Compile Include="geometry_msgs\Quaternion.cs" />
+	<Compile Include="geometry_msgs\QuaternionStamped.cs" />
+	<Compile Include="geometry_msgs\Transform.cs" />
+	<Compile Include="geometry_msgs\TransformStamped.cs" />
+	<Compile Include="geometry_msgs\Twist.cs" />
+	<Compile Include="geometry_msgs\TwistStamped.cs" />
+	<Compile Include="geometry_msgs\TwistWithCovariance.cs" />
+	<Compile Include="geometry_msgs\TwistWithCovarianceStamped.cs" />
+	<Compile Include="geometry_msgs\Vector3.cs" />
+	<Compile Include="geometry_msgs\Vector3Stamped.cs" />
+	<Compile Include="geometry_msgs\Wrench.cs" />
+	<Compile Include="geometry_msgs\WrenchStamped.cs" />
+	<Compile Include="actionlib_msgs\GoalID.cs" />
+	<Compile Include="actionlib_msgs\GoalStatus.cs" />
+	<Compile Include="actionlib_msgs\GoalStatusArray.cs" />
+	<Compile Include="baxter_core_msgs\AnalogIOState.cs" />
+	<Compile Include="baxter_core_msgs\AnalogIOStates.cs" />
+	<Compile Include="baxter_core_msgs\AnalogOutputCommand.cs" />
+	<Compile Include="baxter_core_msgs\AssemblyState.cs" />
+	<Compile Include="baxter_core_msgs\AssemblyStates.cs" />
+	<Compile Include="baxter_core_msgs\CameraControl.cs" />
+	<Compile Include="baxter_core_msgs\CameraSettings.cs" />
+	<Compile Include="baxter_core_msgs\CollisionAvoidanceState.cs" />
+	<Compile Include="baxter_core_msgs\CollisionDetectionState.cs" />
+	<Compile Include="baxter_core_msgs\DigitalIOState.cs" />
+	<Compile Include="baxter_core_msgs\DigitalIOStates.cs" />
+	<Compile Include="baxter_core_msgs\DigitalOutputCommand.cs" />
+	<Compile Include="baxter_core_msgs\EndEffectorCommand.cs" />
+	<Compile Include="baxter_core_msgs\EndEffectorProperties.cs" />
+	<Compile Include="baxter_core_msgs\EndEffectorState.cs" />
+	<Compile Include="baxter_core_msgs\EndpointState.cs" />
+	<Compile Include="baxter_core_msgs\EndpointStates.cs" />
+	<Compile Include="baxter_core_msgs\HeadPanCommand.cs" />
+	<Compile Include="baxter_core_msgs\HeadState.cs" />
+	<Compile Include="baxter_core_msgs\ITBState.cs" />
+	<Compile Include="baxter_core_msgs\ITBStates.cs" />
+	<Compile Include="baxter_core_msgs\JointCommand.cs" />
+	<Compile Include="baxter_core_msgs\NavigatorState.cs" />
+	<Compile Include="baxter_core_msgs\NavigatorStates.cs" />
+	<Compile Include="baxter_core_msgs\RobustControllerStatus.cs" />
+	<Compile Include="baxter_core_msgs\SEAJointState.cs" />
+	<Compile Include="control_msgs\FollowJointTrajectoryAction.cs" />
+	<Compile Include="control_msgs\FollowJointTrajectoryActionFeedback.cs" />
+	<Compile Include="control_msgs\FollowJointTrajectoryActionGoal.cs" />
+	<Compile Include="control_msgs\FollowJointTrajectoryActionResult.cs" />
+	<Compile Include="control_msgs\FollowJointTrajectoryFeedback.cs" />
+	<Compile Include="control_msgs\FollowJointTrajectoryGoal.cs" />
+	<Compile Include="control_msgs\FollowJointTrajectoryResult.cs" />
+	<Compile Include="control_msgs\GripperCommand.cs" />
+	<Compile Include="control_msgs\GripperCommandAction.cs" />
+	<Compile Include="control_msgs\GripperCommandActionFeedback.cs" />
+	<Compile Include="control_msgs\GripperCommandActionGoal.cs" />
+	<Compile Include="control_msgs\GripperCommandActionResult.cs" />
+	<Compile Include="control_msgs\GripperCommandFeedback.cs" />
+	<Compile Include="control_msgs\GripperCommandGoal.cs" />
+	<Compile Include="control_msgs\GripperCommandResult.cs" />
+	<Compile Include="control_msgs\JointControllerState.cs" />
+	<Compile Include="control_msgs\JointTolerance.cs" />
+	<Compile Include="control_msgs\JointTrajectoryAction.cs" />
+	<Compile Include="control_msgs\JointTrajectoryActionFeedback.cs" />
+	<Compile Include="control_msgs\JointTrajectoryActionGoal.cs" />
+	<Compile Include="control_msgs\JointTrajectoryActionResult.cs" />
+	<Compile Include="control_msgs\JointTrajectoryControllerState.cs" />
+	<Compile Include="control_msgs\JointTrajectoryFeedback.cs" />
+	<Compile Include="control_msgs\JointTrajectoryGoal.cs" />
+	<Compile Include="control_msgs\JointTrajectoryResult.cs" />
+	<Compile Include="control_msgs\PidState.cs" />
+	<Compile Include="control_msgs\PointHeadAction.cs" />
+	<Compile Include="control_msgs\PointHeadActionFeedback.cs" />
+	<Compile Include="control_msgs\PointHeadActionGoal.cs" />
+	<Compile Include="control_msgs\PointHeadActionResult.cs" />
+	<Compile Include="control_msgs\PointHeadFeedback.cs" />
+	<Compile Include="control_msgs\PointHeadGoal.cs" />
+	<Compile Include="control_msgs\PointHeadResult.cs" />
+	<Compile Include="control_msgs\SingleJointPositionAction.cs" />
+	<Compile Include="control_msgs\SingleJointPositionActionFeedback.cs" />
+	<Compile Include="control_msgs\SingleJointPositionActionGoal.cs" />
+	<Compile Include="control_msgs\SingleJointPositionActionResult.cs" />
+	<Compile Include="control_msgs\SingleJointPositionFeedback.cs" />
+	<Compile Include="control_msgs\SingleJointPositionGoal.cs" />
+	<Compile Include="control_msgs\SingleJointPositionResult.cs" />
+	<Compile Include="custom_msgs\arrayofdeez.cs" />
+	<Compile Include="custom_msgs\arraytest.cs" />
+	<Compile Include="custom_msgs\cgeo.cs" />
+	<Compile Include="custom_msgs\ptz.cs" />
+	<Compile Include="custom_msgs\robotMortality.cs" />
+	<Compile Include="custom_msgs\servosPos.cs" />
+	<Compile Include="custom_msgs\simpleintarray.cs" />
+	<Compile Include="dynamic_reconfigure\BoolParameter.cs" />
+	<Compile Include="dynamic_reconfigure\Config.cs" />
+	<Compile Include="dynamic_reconfigure\ConfigDescription.cs" />
+	<Compile Include="dynamic_reconfigure\DoubleParameter.cs" />
+	<Compile Include="dynamic_reconfigure\Group.cs" />
+	<Compile Include="dynamic_reconfigure\GroupState.cs" />
+	<Compile Include="dynamic_reconfigure\IntParameter.cs" />
+	<Compile Include="dynamic_reconfigure\ParamDescription.cs" />
+	<Compile Include="dynamic_reconfigure\SensorLevels.cs" />
+	<Compile Include="dynamic_reconfigure\StrParameter.cs" />
+	<Compile Include="dynamixel_msgs\JointState.cs" />
+	<Compile Include="experiment\SimonSays.cs" />
+	<Compile Include="gazebo_msgs\ContactsState.cs" />
+	<Compile Include="gazebo_msgs\ContactState.cs" />
+	<Compile Include="gazebo_msgs\LinkState.cs" />
+	<Compile Include="gazebo_msgs\LinkStates.cs" />
+	<Compile Include="gazebo_msgs\ModelState.cs" />
+	<Compile Include="gazebo_msgs\ModelStates.cs" />
+	<Compile Include="gazebo_msgs\ODEJointProperties.cs" />
+	<Compile Include="gazebo_msgs\ODEPhysics.cs" />
+	<Compile Include="gazebo_msgs\WorldState.cs" />
+	<Compile Include="histogram_msgs\histogramsnapshot.cs" />
+	<Compile Include="histogram_msgs\MCLSnapshot.cs" />
+	<Compile Include="humanoid_nav_msgs\ExecFootstepsAction.cs" />
+	<Compile Include="humanoid_nav_msgs\ExecFootstepsActionFeedback.cs" />
+	<Compile Include="humanoid_nav_msgs\ExecFootstepsActionGoal.cs" />
+	<Compile Include="humanoid_nav_msgs\ExecFootstepsActionResult.cs" />
+	<Compile Include="humanoid_nav_msgs\ExecFootstepsFeedback.cs" />
+	<Compile Include="humanoid_nav_msgs\ExecFootstepsGoal.cs" />
+	<Compile Include="humanoid_nav_msgs\ExecFootstepsResult.cs" />
+	<Compile Include="humanoid_nav_msgs\StepTarget.cs" />
+	<Compile Include="map_msgs\OccupancyGridUpdate.cs" />
+	<Compile Include="map_msgs\PointCloud2Update.cs" />
+	<Compile Include="map_msgs\ProjectedMap.cs" />
+	<Compile Include="map_msgs\ProjectedMapInfo.cs" />
+	<Compile Include="move_base_msgs\MoveBaseAction.cs" />
+	<Compile Include="move_base_msgs\MoveBaseActionFeedback.cs" />
+	<Compile Include="move_base_msgs\MoveBaseActionGoal.cs" />
+	<Compile Include="move_base_msgs\MoveBaseActionResult.cs" />
+	<Compile Include="move_base_msgs\MoveBaseFeedback.cs" />
+	<Compile Include="move_base_msgs\MoveBaseGoal.cs" />
+	<Compile Include="move_base_msgs\MoveBaseResult.cs" />
+	<Compile Include="nav_msgs\GetMapAction.cs" />
+	<Compile Include="nav_msgs\GetMapActionFeedback.cs" />
+	<Compile Include="nav_msgs\GetMapActionGoal.cs" />
+	<Compile Include="nav_msgs\GetMapActionResult.cs" />
+	<Compile Include="nav_msgs\GetMapFeedback.cs" />
+	<Compile Include="nav_msgs\GetMapGoal.cs" />
+	<Compile Include="nav_msgs\GetMapResult.cs" />
+	<Compile Include="nav_msgs\GridCells.cs" />
+	<Compile Include="nav_msgs\MapMetaData.cs" />
+	<Compile Include="nav_msgs\OccupancyGrid.cs" />
+	<Compile Include="nav_msgs\Odometry.cs" />
+	<Compile Include="nav_msgs\Path.cs" />
+	<Compile Include="object_recognition_msgs\ObjectInformation.cs" />
+	<Compile Include="object_recognition_msgs\ObjectRecognitionAction.cs" />
+	<Compile Include="object_recognition_msgs\ObjectRecognitionActionFeedback.cs" />
+	<Compile Include="object_recognition_msgs\ObjectRecognitionActionGoal.cs" />
+	<Compile Include="object_recognition_msgs\ObjectRecognitionActionResult.cs" />
+	<Compile Include="object_recognition_msgs\ObjectRecognitionFeedback.cs" />
+	<Compile Include="object_recognition_msgs\ObjectRecognitionGoal.cs" />
+	<Compile Include="object_recognition_msgs\ObjectRecognitionResult.cs" />
+	<Compile Include="object_recognition_msgs\ObjectType.cs" />
+	<Compile Include="object_recognition_msgs\RecognizedObject.cs" />
+	<Compile Include="object_recognition_msgs\RecognizedObjectArray.cs" />
+	<Compile Include="object_recognition_msgs\Table.cs" />
+	<Compile Include="object_recognition_msgs\TableArray.cs" />
+	<Compile Include="octomap_msgs\Octomap.cs" />
+	<Compile Include="octomap_msgs\OctomapWithPose.cs" />
+	<Compile Include="pcl_msgs\ModelCoefficients.cs" />
+	<Compile Include="pcl_msgs\PointIndices.cs" />
+	<Compile Include="pcl_msgs\PolygonMesh.cs" />
+	<Compile Include="pcl_msgs\Vertices.cs" />
+	<Compile Include="rock_publisher\imgData.cs" />
+	<Compile Include="rock_publisher\imgDataArray.cs" />
+	<Compile Include="rock_publisher\recalibrateMsg.cs" />
+	<Compile Include="roscsharp\Logger.cs" />
+	<Compile Include="rosgraph_msgs\Clock.cs" />
+	<Compile Include="rosgraph_msgs\Log.cs" />
+	<Compile Include="sample_acquisition\ArmMovement.cs" />
+	<Compile Include="sample_acquisition\ArmStatus.cs" />
+	<Compile Include="sensor_msgs\BatteryState.cs" />
+	<Compile Include="sensor_msgs\CameraInfo.cs" />
+	<Compile Include="sensor_msgs\ChannelFloat32.cs" />
+	<Compile Include="sensor_msgs\CompressedImage.cs" />
+	<Compile Include="sensor_msgs\FluidPressure.cs" />
+	<Compile Include="sensor_msgs\Illuminance.cs" />
+	<Compile Include="sensor_msgs\Image.cs" />
+	<Compile Include="sensor_msgs\Imu.cs" />
+	<Compile Include="sensor_msgs\JointState.cs" />
+	<Compile Include="sensor_msgs\Joy.cs" />
+	<Compile Include="sensor_msgs\JoyFeedback.cs" />
+	<Compile Include="sensor_msgs\JoyFeedbackArray.cs" />
+	<Compile Include="sensor_msgs\LaserEcho.cs" />
+	<Compile Include="sensor_msgs\LaserScan.cs" />
+	<Compile Include="sensor_msgs\MagneticField.cs" />
+	<Compile Include="sensor_msgs\MultiDOFJointState.cs" />
+	<Compile Include="sensor_msgs\MultiEchoLaserScan.cs" />
+	<Compile Include="sensor_msgs\NavSatFix.cs" />
+	<Compile Include="sensor_msgs\NavSatStatus.cs" />
+	<Compile Include="sensor_msgs\PointCloud.cs" />
+	<Compile Include="sensor_msgs\PointCloud2.cs" />
+	<Compile Include="sensor_msgs\PointField.cs" />
+	<Compile Include="sensor_msgs\Range.cs" />
+	<Compile Include="sensor_msgs\RegionOfInterest.cs" />
+	<Compile Include="sensor_msgs\RelativeHumidity.cs" />
+	<Compile Include="sensor_msgs\Temperature.cs" />
+	<Compile Include="sensor_msgs\TimeReference.cs" />
+	<Compile Include="shape_msgs\Mesh.cs" />
+	<Compile Include="shape_msgs\MeshTriangle.cs" />
+	<Compile Include="shape_msgs\Plane.cs" />
+	<Compile Include="shape_msgs\SolidPrimitive.cs" />
+	<Compile Include="tf2_msgs\LookupTransformAction.cs" />
+	<Compile Include="tf2_msgs\LookupTransformActionFeedback.cs" />
+	<Compile Include="tf2_msgs\LookupTransformActionGoal.cs" />
+	<Compile Include="tf2_msgs\LookupTransformActionResult.cs" />
+	<Compile Include="tf2_msgs\LookupTransformFeedback.cs" />
+	<Compile Include="tf2_msgs\LookupTransformGoal.cs" />
+	<Compile Include="tf2_msgs\LookupTransformResult.cs" />
+	<Compile Include="tf2_msgs\TF2Error.cs" />
+	<Compile Include="tf2_msgs\TFMessage.cs" />
+	<Compile Include="tf\tfMessage.cs" />
+	<Compile Include="theora_image_transport\Packet.cs" />
+	<Compile Include="trajectory_msgs\JointTrajectory.cs" />
+	<Compile Include="trajectory_msgs\JointTrajectoryPoint.cs" />
+	<Compile Include="trajectory_msgs\MultiDOFJointTrajectory.cs" />
+	<Compile Include="trajectory_msgs\MultiDOFJointTrajectoryPoint.cs" />
+	<Compile Include="trust_msgs\InterfaceCommand.cs" />
+	<Compile Include="trust_msgs\RunDescription.cs" />
+	<Compile Include="uvc_camera\camera_sliders.cs" />
+	<Compile Include="whosonfirst\Dibs.cs" />
+	<Compile Include="wpf_msgs\Point2.cs" />
+	<Compile Include="wpf_msgs\Waypoints.cs" />
+	<Compile Include="wpf_msgs\WindowState.cs" />
+	<Compile Include="topic_tools\DemuxAdd.cs" />
+	<Compile Include="topic_tools\DemuxDelete.cs" />
+	<Compile Include="topic_tools\DemuxList.cs" />
+	<Compile Include="topic_tools\DemuxSelect.cs" />
+	<Compile Include="topic_tools\MuxAdd.cs" />
+	<Compile Include="topic_tools\MuxDelete.cs" />
+	<Compile Include="topic_tools\MuxList.cs" />
+	<Compile Include="topic_tools\MuxSelect.cs" />
+	<Compile Include="tf2_msgs\FrameGraph.cs" />
+	<Compile Include="tf\FrameGraph.cs" />
+	<Compile Include="std_srvs\Empty.cs" />
+	<Compile Include="std_srvs\SetBool.cs" />
+	<Compile Include="std_srvs\Trigger.cs" />
+	<Compile Include="ServiceTest\AddTwoInts.cs" />
+	<Compile Include="sensor_msgs\SetCameraInfo.cs" />
+	<Compile Include="roscsharp\GetLoggers.cs" />
+	<Compile Include="roscsharp\SetLoggerLevel.cs" />
+	<Compile Include="roscpp_tutorials\TwoInts.cs" />
+	<Compile Include="octomap_msgs\BoundingBoxQuery.cs" />
+	<Compile Include="octomap_msgs\GetOctomap.cs" />
+	<Compile Include="object_recognition_msgs\GetObjectInformation.cs" />
+	<Compile Include="nav_msgs\GetMap.cs" />
+	<Compile Include="nav_msgs\GetPlan.cs" />
+	<Compile Include="nav_msgs\SetMap.cs" />
+	<Compile Include="map_msgs\GetMapROI.cs" />
+	<Compile Include="map_msgs\GetPointMap.cs" />
+	<Compile Include="map_msgs\GetPointMapROI.cs" />
+	<Compile Include="map_msgs\ProjectedMapsInfo.cs" />
+	<Compile Include="map_msgs\SaveMap.cs" />
+	<Compile Include="map_msgs\SetMapProjections.cs" />
+	<Compile Include="humanoid_nav_msgs\ClipFootstep.cs" />
+	<Compile Include="humanoid_nav_msgs\PlanFootsteps.cs" />
+	<Compile Include="humanoid_nav_msgs\PlanFootstepsBetweenFeet.cs" />
+	<Compile Include="humanoid_nav_msgs\StepTargetService.cs" />
+	<Compile Include="gazebo_msgs\ApplyBodyWrench.cs" />
+	<Compile Include="gazebo_msgs\ApplyJointEffort.cs" />
+	<Compile Include="gazebo_msgs\BodyRequest.cs" />
+	<Compile Include="gazebo_msgs\DeleteModel.cs" />
+	<Compile Include="gazebo_msgs\GetJointProperties.cs" />
+	<Compile Include="gazebo_msgs\GetLinkProperties.cs" />
+	<Compile Include="gazebo_msgs\GetLinkState.cs" />
+	<Compile Include="gazebo_msgs\GetModelProperties.cs" />
+	<Compile Include="gazebo_msgs\GetModelState.cs" />
+	<Compile Include="gazebo_msgs\GetPhysicsProperties.cs" />
+	<Compile Include="gazebo_msgs\GetWorldProperties.cs" />
+	<Compile Include="gazebo_msgs\JointRequest.cs" />
+	<Compile Include="gazebo_msgs\SetJointProperties.cs" />
+	<Compile Include="gazebo_msgs\SetJointTrajectory.cs" />
+	<Compile Include="gazebo_msgs\SetLinkProperties.cs" />
+	<Compile Include="gazebo_msgs\SetLinkState.cs" />
+	<Compile Include="gazebo_msgs\SetModelConfiguration.cs" />
+	<Compile Include="gazebo_msgs\SetModelState.cs" />
+	<Compile Include="gazebo_msgs\SetPhysicsProperties.cs" />
+	<Compile Include="gazebo_msgs\SpawnModel.cs" />
+	<Compile Include="dynamic_reconfigure\Reconfigure.cs" />
+	<Compile Include="control_msgs\QueryCalibrationState.cs" />
+	<Compile Include="control_msgs\QueryTrajectoryState.cs" />
+	<Compile Include="baxter_core_msgs\CloseCamera.cs" />
+	<Compile Include="baxter_core_msgs\ListCameras.cs" />
+	<Compile Include="baxter_core_msgs\OpenCamera.cs" />
+	<Compile Include="baxter_core_msgs\SolvePositionIK.cs" />
+	<Compile Include="SerializationHelper.cs" />
+	<Compile Include="Interfaces.cs" />
+	<Compile Include="MessageTypes.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
