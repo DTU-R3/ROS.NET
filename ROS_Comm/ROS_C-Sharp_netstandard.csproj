@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>Ros_CSharp</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Messages/Messages_netstandard.csproj" />
+    <ProjectReference Include="../XmlRpc_Wrapper/XmlRpc_Wrapper_netstandard.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -19,10 +19,13 @@ I've found that creating a new repository, adding ros.net as a submodule, creati
 - You need to have visual studio 2010+ and .Net >=4.0
 	(express might?? work, but you need to be able to compile the XmlRpc++ library AND C# applications. XmlRpcWin32 doesn't change much, so you could compile it once, and then use Visual Studio Express to work in C#... but the XmlRpcWin32.dll will need to wind up in your project's output directory)
 - For DynamicReconfigure, you need the Microsoft Expression Blend SDK (https://www.microsoft.com/en-us/download/details.aspx?id=10801)
+- The *_netstandard* version is targetting .NET Standard 2.0
 
 ## What is the difference between these .sln files?
 - Template_ROS_dotNET.sln
   - the minimum references to ROS.NET-ify your project
+- Template_ROS_dotNET_netstandard.sln
+  - same as above, but in .NET Standard version, compatible .NET Core
 - ROS_dotNET.sln
   - Template + rosmaster and rosparam commandline tools
 - ROS_dotNET_ROS_SAMPLES
